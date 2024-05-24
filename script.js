@@ -18,10 +18,12 @@ const game = ( () => {
             
                 if (checkWinner()) {
                     console.log(`${getCurrentPlayer().name} won this roud!`);
-                    
                     ++getCurrentPlayer().score
+                    resetBoard()
+                    
                 } else if (checkDraw()) {
                     console.log("This round was a tie")
+                    resetBoard()
                 } else {
                     switchPlayer();
                 }
@@ -54,10 +56,10 @@ const game = ( () => {
                 
         }
         
-        const resetBoard = () => board = Array(9).fill(null)
+        const resetBoard = () => board.fill(null)
                 
         
-        return {playTurn, checkWinner, checkDraw}
+        return {playTurn, checkWinner, checkDraw, resetBoard}
 
 
     })()  
