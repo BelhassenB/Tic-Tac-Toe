@@ -14,7 +14,7 @@ header {
     place-items: center;
 }
 .board-container {
-    margin-top: 2rem;
+    margin-top: 5rem;
     display: grid;
     place-items: center;
     height: 50vh;
@@ -29,7 +29,7 @@ header {
 .board div {
     border-bottom: 2px solid black;
     border-right: 2px solid black;
-    font-size: 2rem;  
+    font-size: 3rem;  
     display: grid;
     place-items: center;
     
@@ -42,4 +42,70 @@ header {
 }
 .board div:nth-child(6) ~ div {
     border-bottom: none;
+}
+.score-board {
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 5rem;
+    margin: auto;
+    text-align: center;
+    > div {
+        /* border: 1px solid red; */
+        height: 50%;
+        text-align: center;
+    }
+}
+
+dialog {
+    width: 30%;
+    height: 40%;
+    margin: auto;
+    border: none;
+    padding: 1rem 2rem;
+    background-color: rgb(245, 239, 233);
+    form {
+        appearance: none;
+        display: flex;
+        flex-direction: column;
+        gap: .4rem;
+    }
+
+}
+
+dialog::backdrop {
+    background-color: black;
+    opacity: 0.5;
+}
+button {
+    /* margin-top: 3rem; */
+    background-color: #000;
+    width: fit-content;
+    border-radius: 20px;
+    padding: .5rem 1rem;
+    color: #fff;
+    margin: 50px auto;
+    font-weight: bolder;
+}
+input {
+    height: 2rem;
+    /* width: 80%; */
+    font-size: 1.2em;
+    
+}
+input::focus {
+    background-color: green;
+}
+label {
+    font-weight: bold;
+}
+button.restart {
+    margin: auto;
+    
+}
+.restart:active {
+    box-shadow: 2px 2px 1px #000;   
+      
+}
+.restart:hover {
+    cursor: pointer;
 }
