@@ -11,18 +11,39 @@
     <header>
         <h1>Tic Tac Toe</h1>
     </header>
+    <dialog>
+        <form action="" method="dialog">
+            
+            <label for="playerOne-name">Player One Name:</label>
+            <input type="text" id="playerOne-name" name="firstPlayer-name">
+
+            <label for="playerTwo-name">Player Two Name:</label>
+            <input type="text" id="playerTwo-name" name="secondPlayer-name">
+
+            <button type="submit" id="start-game">Start Game</button>
+        </form>
+    </dialog>
     <div class="board-container">
         <div class="board">
-           <div class="cell"></div>
-           <div class="cell"></div>
-           <div class="cell"></div>
-           <div class="cell"></div>
-           <div class="cell"></div>
-           <div class="cell"></div>
-           <div class="cell"></div>
-           <div class="cell"></div>
-           <div class="cell"></div>           
+           <div class="cell" id="0"></div>
+           <div class="cell" id="1"></div>
+           <div class="cell" id="2"></div>
+           <div class="cell" id="3"></div>
+           <div class="cell" id="4"></div>
+           <div class="cell" id="5"></div>
+           <div class="cell" id="6"></div>
+           <div class="cell" id="7"></div>
+           <div class="cell" id="8"></div>           
         </div>
+    </div>
+    <div class="score-board">
+        <div class="playerOne-score">
+        
+        </div>
+        <div class="playerTwo-score">
+        
+        </div>
+        <button class="restart" hidden="hidden">Restart Game</button>
     </div>
     
     <script src="script.js"></script>
